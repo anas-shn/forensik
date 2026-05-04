@@ -5,8 +5,10 @@ ganti /dev/sdb menjadi disk yang akan di recovery
 ##foremost
 
 ```bash
+#install
 sudo apt install foremost
 
+#run
 foremost -v \
   -t jpg,doc,pdf \
   -i /dev/sdb \
@@ -16,8 +18,10 @@ foremost -v \
 ##scalpel
 
 ```bash
+#install
 sudo apt install
 
+#run
 scalpel /dev/sdb \
   -c /etc/scalpel/scalpel.conf \
   -o /work/scalpel-hasil \
@@ -27,5 +31,9 @@ scalpel /dev/sdb \
 ##photorec
 
 ```bash
+#install
 apt install testdisk
+
+#jalankan
+photorec
 ```
